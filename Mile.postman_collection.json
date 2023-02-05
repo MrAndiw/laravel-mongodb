@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "580856b3-c0a0-48a5-9c2c-87de294c8193",
+		"name": "Mile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1312396"
+	},
+	"item": [
+		{
+			"name": "Create Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_name\": \"PT. AMARA PRIMATIGA NEW 2\",\n    \"customer_code\": \"111222333\",\n    \"transaction_amount\": \"70700\",\n    \"transaction_discount\": \"0\",\n    \"transaction_additional_field\": \"\",\n    \"transaction_payment_type\": \"29\",\n    \"transaction_state\": \"PAID\",\n    \"transaction_code\": \"CGKFT20200715121\",\n    \"transaction_order\": 121,\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\n    \"organization_id\": 6,\n    \"created_at\": \"2020-07-15T11:11:12+0700\",\n    \"updated_at\": \"2020-07-15T11:11:22+0700\",\n    \"transaction_payment_type_name\": \"Invoice\",\n    \"transaction_cash_amount\": 0,\n    \"transaction_cash_change\": 0,\n    \"customer_attribute\": {\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\n        \"TOP\": \"14 Hari\",\n        \"Jenis_Pelanggan\": \"B2B\"\n    },\n    \"connote\": {\n        \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\",\n        \"connote_number\": 1,\n        \"connote_service\": \"ECO\",\n        \"connote_service_price\": 70700,\n        \"connote_amount\": 70700,\n        \"connote_code\": \"AWB00100209082020\",\n        \"connote_booking_code\": \"\",\n        \"connote_order\": 326931,\n        \"connote_state\": \"PAID\",\n        \"connote_state_id\": 2,\n        \"zone_code_from\": \"CGKFT\",\n        \"zone_code_to\": \"SMG\",\n        \"surcharge_amount\": null,\n            \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n        \"actual_weight\": 20,\n        \"volume_weight\": 0,\n        \"chargeable_weight\": 20,\n        \"created_at\": \"2020-07-15T11:11:12+0700\",\n        \"updated_at\": \"2020-07-15T11:11:22+0700\",\n        \"organization_id\": 6,\n        \"location_id\": \"5cecb20b6c49615b174c3e74\",\n        \"connote_total_package\": \"3\",\n        \"connote_surcharge_amount\": \"0\",\n        \"connote_sla_day\": \"4\",\n        \"location_name\": \"Hub Jakarta Selatan\",\n        \"location_type\": \"HUB\",\n        \"source_tariff_db\": \"tariff_customers\",\n        \"id_source_tariff\": \"1576868\",\n        \"pod\": null,\n        \"history\": []\n    },\n    \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/api/package",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transaction",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9000/api/package/63dfc60f81160d8c2404f112",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"package",
+						"63dfc60f81160d8c2404f112"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Transaction",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n    \"customer_name\": \"PT. AMARA PRIMATIGA ANDI\",\n    \"customer_code\": \"111222AAA\",\n    \"transaction_amount\": \"70700\",\n    \"transaction_discount\": \"0\",\n    \"transaction_additional_field\": \"\",\n    \"transaction_payment_type\": \"29\",\n    \"transaction_state\": \"PAID\",\n    \"transaction_code\": \"CGKFT20200715121\",\n    \"transaction_order\": 121,\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\n    \"organization_id\": 6,\n    \"created_at\": \"2020-07-15T11:11:12+0700\",\n    \"updated_at\": \"2020-07-15T11:11:22+0700\",\n    \"transaction_payment_type_name\": \"Invoice\",\n    \"transaction_cash_amount\": 0,\n    \"transaction_cash_change\": 0,\n    \"customer_attribute\": {\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\n        \"TOP\": \"14 Hari\",\n        \"Jenis_Pelanggan\": \"B2B\"\n    },\n    \"connote\": {\n        \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\",\n        \"connote_number\": 1,\n        \"connote_service\": \"ECO\",\n        \"connote_service_price\": 70700,\n        \"connote_amount\": 70700,\n        \"connote_code\": \"AWB00100209082020\",\n        \"connote_booking_code\": \"\",\n        \"connote_order\": 326931,\n        \"connote_state\": \"PAID\",\n        \"connote_state_id\": 2,\n        \"zone_code_from\": \"CGKFT\",\n        \"zone_code_to\": \"SMG\",\n        \"surcharge_amount\": null,\n            \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n        \"actual_weight\": 20,\n        \"volume_weight\": 0,\n        \"chargeable_weight\": 20,\n        \"created_at\": \"2020-07-15T11:11:12+0700\",\n        \"updated_at\": \"2020-07-15T11:11:22+0700\",\n        \"organization_id\": 6,\n        \"location_id\": \"5cecb20b6c49615b174c3e74\",\n        \"connote_total_package\": \"3\",\n        \"connote_surcharge_amount\": \"0\",\n        \"connote_sla_day\": \"4\",\n        \"location_name\": \"Hub Jakarta Selatan\",\n        \"location_type\": \"HUB\",\n        \"source_tariff_db\": \"tariff_customers\",\n        \"id_source_tariff\": \"1576868\",\n        \"pod\": null,\n        \"history\": []\n    },\n    \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/api/package",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Transaction",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n    \"customer_name\": \"PT. AMARA PRIMATIGA ANDI 3\",\n    \"customer_code\": \"111222AAA\",\n    \"transaction_amount\": \"70700\",\n    \"transaction_discount\": \"0\",\n    \"transaction_additional_field\": \"\",\n    \"transaction_payment_type\": \"29\",\n    \"transaction_state\": \"PAID\",\n    \"transaction_code\": \"CGKFT20200715121\",\n    \"transaction_order\": 121,\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\n    \"organization_id\": 6,\n    \"created_at\": \"2020-07-15T11:11:12+0700\",\n    \"updated_at\": \"2020-07-15T11:11:22+0700\",\n    \"transaction_payment_type_name\": \"Invoice\",\n    \"transaction_cash_amount\": 0,\n    \"transaction_cash_change\": 0,\n    \"customer_attribute\": {\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\n        \"TOP\": \"14 Hari\",\n        \"Jenis_Pelanggan\": \"B2B\"\n    },\n    \"connote\": {\n        \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\",\n        \"connote_number\": 1,\n        \"connote_service\": \"ECO\",\n        \"connote_service_price\": 70700,\n        \"connote_amount\": 70700,\n        \"connote_code\": \"AWB00100209082020\",\n        \"connote_booking_code\": \"\",\n        \"connote_order\": 326931,\n        \"connote_state\": \"PAID\",\n        \"connote_state_id\": 2,\n        \"zone_code_from\": \"CGKFT\",\n        \"zone_code_to\": \"SMG\",\n        \"surcharge_amount\": null,\n            \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n        \"actual_weight\": 20,\n        \"volume_weight\": 0,\n        \"chargeable_weight\": 20,\n        \"created_at\": \"2020-07-15T11:11:12+0700\",\n        \"updated_at\": \"2020-07-15T11:11:22+0700\",\n        \"organization_id\": 6,\n        \"location_id\": \"5cecb20b6c49615b174c3e74\",\n        \"connote_total_package\": \"3\",\n        \"connote_surcharge_amount\": \"0\",\n        \"connote_sla_day\": \"4\",\n        \"location_name\": \"Hub Jakarta Selatan\",\n        \"location_type\": \"HUB\",\n        \"source_tariff_db\": \"tariff_customers\",\n        \"id_source_tariff\": \"1576868\",\n        \"pod\": null,\n        \"history\": []\n    },\n    \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/api/package",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n    \"customer_name\": \"PT. AMARA PRIMATIGA\",\n    \"customer_code\": \"1678593\",\n    \"transaction_amount\": \"70700\",\n    \"transaction_discount\": \"0\",\n    \"transaction_additional_field\": \"\",\n    \"transaction_payment_type\": \"29\",\n    \"transaction_state\": \"PAID\",\n    \"transaction_code\": \"CGKFT20200715121\",\n    \"transaction_order\": 121,\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\n    \"organization_id\": 6,\n    \"created_at\": \"2020-07-15T11:11:12+0700\",\n    \"updated_at\": \"2020-07-15T11:11:22+0700\",\n    \"transaction_payment_type_name\": \"Invoice\",\n    \"transaction_cash_amount\": 0,\n    \"transaction_cash_change\": 0,\n    \"customer_attribute\": {\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\n        \"TOP\": \"14 Hari\",\n        \"Jenis_Pelanggan\": \"B2B\"\n    },\n    \"connote\": {\n        \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\",\n        \"connote_number\": 1,\n        \"connote_service\": \"ECO\",\n        \"connote_service_price\": 70700,\n        \"connote_amount\": 70700,\n        \"connote_code\": \"AWB00100209082020\",\n        \"connote_booking_code\": \"\",\n        \"connote_order\": 326931,\n        \"connote_state\": \"PAID\",\n        \"connote_state_id\": 2,\n        \"zone_code_from\": \"CGKFT\",\n        \"zone_code_to\": \"SMG\",\n        \"surcharge_amount\": null,\n            \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n        \"actual_weight\": 20,\n        \"volume_weight\": 0,\n        \"chargeable_weight\": 20,\n        \"created_at\": \"2020-07-15T11:11:12+0700\",\n        \"updated_at\": \"2020-07-15T11:11:22+0700\",\n        \"organization_id\": 6,\n        \"location_id\": \"5cecb20b6c49615b174c3e74\",\n        \"connote_total_package\": \"3\",\n        \"connote_surcharge_amount\": \"0\",\n        \"connote_sla_day\": \"4\",\n        \"location_name\": \"Hub Jakarta Selatan\",\n        \"location_type\": \"HUB\",\n        \"source_tariff_db\": \"tariff_customers\",\n        \"id_source_tariff\": \"1576868\",\n        \"pod\": null,\n        \"history\": []\n    },\n    \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/api/package",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n    \"customer_name\": \"PT. AMARA PRIMATIGA\",\n    \"customer_code\": \"1678593\",\n    \"transaction_amount\": \"70700\",\n    \"transaction_discount\": \"0\",\n    \"transaction_additional_field\": \"\",\n    \"transaction_payment_type\": \"29\",\n    \"transaction_state\": \"PAID\",\n    \"transaction_code\": \"CGKFT20200715121\",\n    \"transaction_order\": 121,\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\n    \"organization_id\": 6,\n    \"created_at\": \"2020-07-15T11:11:12+0700\",\n    \"updated_at\": \"2020-07-15T11:11:22+0700\",\n    \"transaction_payment_type_name\": \"Invoice\",\n    \"transaction_cash_amount\": 0,\n    \"transaction_cash_change\": 0,\n    \"customer_attribute\": {\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\n        \"TOP\": \"14 Hari\",\n        \"Jenis_Pelanggan\": \"B2B\"\n    },\n    \"connote\": {\n        \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\",\n        \"connote_number\": 1,\n        \"connote_service\": \"ECO\",\n        \"connote_service_price\": 70700,\n        \"connote_amount\": 70700,\n        \"connote_code\": \"AWB00100209082020\",\n        \"connote_booking_code\": \"\",\n        \"connote_order\": 326931,\n        \"connote_state\": \"PAID\",\n        \"connote_state_id\": 2,\n        \"zone_code_from\": \"CGKFT\",\n        \"zone_code_to\": \"SMG\",\n        \"surcharge_amount\": null,\n            \"transaction_id\": \"d0090c40-539f-479a-8274-899b9970bddc\",\n        \"actual_weight\": 20,\n        \"volume_weight\": 0,\n        \"chargeable_weight\": 20,\n        \"created_at\": \"2020-07-15T11:11:12+0700\",\n        \"updated_at\": \"2020-07-15T11:11:22+0700\",\n        \"organization_id\": 6,\n        \"location_id\": \"5cecb20b6c49615b174c3e74\",\n        \"connote_total_package\": \"3\",\n        \"connote_surcharge_amount\": \"0\",\n        \"connote_sla_day\": \"4\",\n        \"location_name\": \"Hub Jakarta Selatan\",\n        \"location_type\": \"HUB\",\n        \"source_tariff_db\": \"tariff_customers\",\n        \"id_source_tariff\": \"1576868\",\n        \"pod\": null,\n        \"history\": []\n    },\n    \"connote_id\": \"f70670b1-c3ef-4caf-bc4f-eefa702092ed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/api/package/d0090c40-539f-479a-8274-899b9970bddc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"package",
+						"d0090c40-539f-479a-8274-899b9970bddc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
